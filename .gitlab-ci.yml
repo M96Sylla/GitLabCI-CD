@@ -111,7 +111,7 @@ stop review:
     action: stop
   only:
     - merge_requests
-  when: manuel
+  when: manual
   script:
     - apk --no-cache add npm
     - npm install -g heroku 
