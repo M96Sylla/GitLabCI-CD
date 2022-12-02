@@ -40,7 +40,7 @@ docker-build:
 
 test acceptation:
   #Official docker image
-  stage: test acceptation
+  stage: Test acceptation
   script:
     - docker load < ${APP_NAME}.tar
     - docker run -d -p ${APP_EXPOSED_PORT}:${APP_CONTAINER_PORT} -e PORT=${APP_CONTAINER_PORT} --name webapp ${APP_NAME}
